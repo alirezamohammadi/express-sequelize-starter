@@ -1,0 +1,25 @@
+{
+  "name": "reservation-system",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "apidoc": "node_modules/.bin/apidoc -i routes/ -o public/apidoc/",
+    "migrate": "./node_modules/.bin/sequelize db:migrate",
+    "seeders": "./node_modules/.bin/sequelize db:seed:all"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "sequelize": "^5.8.5"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.7",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "sequelize-cli": "^5.4.0"
+  }
+}

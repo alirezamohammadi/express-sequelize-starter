@@ -1,0 +1,4 @@
+node_modules/
+public/apidoc/
+/package-lock.json
+/config/config.json
